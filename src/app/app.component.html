@@ -1,0 +1,40 @@
+<div id="sidenavButtons" style="background-color: orange">
+  <button (click)="sidenav.toggle()" style="cursor: pointer;background-color:orange; border: none; width: 120px; height: 50px; border-radius: 3px; font-size: 14px;"><b><mat-icon>menu</mat-icon></b></button>
+</div>
+
+<mat-sidenav-container class="example-container" style="height:100%">
+  <mat-sidenav #sidenav mode="side" style="padding:16px; background-color: orange; width: 310px; border-radius: 3px;">
+    <button (click)="sidenav.close()" style="background-color:orange; border:none; margin-left: 250px;cursor: pointer;"> <b>X</b> </button>
+     <h2> Doações</h2>
+
+      <h3> <mat-icon > home</mat-icon> <a routerLink="/home" style="text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif"> Página Inicial </a></h3>
+
+      <h3> <mat-icon > business</mat-icon> <a routerLink="/institution" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Instituições </a></h3>
+     
+      <h3> <mat-icon >nature_people</mat-icon> <a routerLink="/socialprojects" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Projetos Sociais </a></h3>
+
+      <h3> <mat-icon >face</mat-icon> <a routerLink="/childs" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Crianças e Adolescentes </a></h3>
+     
+      <h3> <mat-icon >people</mat-icon> <a routerLink="/olds" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Idosos </a></h3>
+    
+      <h3> <mat-icon >child_friendly</mat-icon> <a routerLink="/newborn" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Recém nascidos </a></h3>
+    
+      <h3> <mat-icon >pets</mat-icon> <a routerLink="/pets" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Pets </a></h3>
+     
+      <br><h2>Dúvidas</h2>
+     
+      <h3> <a routerLink="/doubts/donations" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Formas de Doação </a></h3>
+     
+       <h3> <a routerLink="/doubts/registration" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Como cadastro minha instituição </a></h3>
+     
+      <h3> <a routerLink="/doubts/security" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Sobre a segurança das doações </a></h3>
+      
+        <h3> <a routerLink="/doubts/about-us" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif"> Quem somos nós </a></h3>
+     
+       <br><h3> <a routerLink="/doubts/work-with-us" style="text-decoration: none; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif">Trabalhe conosco</a></h3>
+     
+    </mat-sidenav>
+
+<router-outlet></router-outlet>
+
+
